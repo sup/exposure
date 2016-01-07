@@ -1,6 +1,6 @@
 # image-mashup
-:fireworks: Mashup two images and get something cool
-
+Mashup two images and get something cool
+![Example] (http://i.imgur.com/uF5XDMw.png)
 ## Installation
 `virtualenv venv`
 
