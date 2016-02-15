@@ -32,11 +32,12 @@ def main(argv):
     width, height = image_1.size
     for x in range(width):
         for y in range(height):
-            # Choose to use other images' pixel
+            # Use the average of each image's pixels
             pixel_1 = image_1.getpixel((x,y))
             pixel_2 = image_2.getpixel((x,y))
             average_pixel = ((pixel_1[0] + pixel_2[0])/2,(pixel_1[1] + pixel_2[1])/2,(pixel_1[2] + pixel_2[2])/2)
             image_1.putpixel((x,y), average_pixel)
+
     # Save the result
     image_1.save("result.png")
 
